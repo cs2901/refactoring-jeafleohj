@@ -1,20 +1,13 @@
 public double getPayAmount() {
-  double result;
-  if (isDead){
-    result = deadAmount();
-  }
-  else {
-    if (isSeparated){
-      result = separatedAmount();
-    }
-    else {
-      if (isRetired){
+    double result;
+    if (isDead){
+        result = deadAmount();
+    } else if (isSeparated){
+        result = separatedAmount();
+    } else if (isRetired){
         result = retiredAmount();
-      }
-      else{
+    } else {
         result = normalPayAmount();
-      }
     }
-  }
-  return result;
+    return result;
 }

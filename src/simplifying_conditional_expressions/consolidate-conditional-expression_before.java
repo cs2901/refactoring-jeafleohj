@@ -1,11 +1,6 @@
 double disabilityAmount() {
-  if (seniority < 2) {
-    return 0;
-  }
-  if (monthsDisabled > 12) {
-    return 0;
-  }
-  if (isPartTime) {
+    boolean abilityAmont = seniority < 2 || monthsDisabled > 12 || isPartTime;
+  if (abilityAmont) {
     return 0;
   }
   // Compute the disability amount.
