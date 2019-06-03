@@ -2,6 +2,6 @@ void setHeight(int value) {
     height = value;
 }
 
-void setHeight(int value) {
+void setwidth(int value) {
     width = value;
 }
